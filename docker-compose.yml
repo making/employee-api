@@ -1,0 +1,10 @@
+version: "2"
+services:
+  vehicle-db:
+    image: bitnami/postgresql:11.11.0-debian-10-r59
+    ports:
+    - 5432:5432
+    environment:
+      POSTGRES_DB: employee
+      POSTGRES_USER: employee
+      POSTGRES_PASSWORD: employee
